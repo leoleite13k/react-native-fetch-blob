@@ -7,7 +7,6 @@ import {
   DeviceEventEmitter,
   NativeAppEventEmitter,
   Platform,
-  AsyncStorage,
   AppState,
 } from 'react-native'
 import type {
@@ -16,6 +15,7 @@ import type {
   RNFetchBlobStream,
   RNFetchBlobResponseInfo
 } from './types'
+import AsyncStorage from '@react-native-community/async-storage';
 import URIUtil from './utils/uri'
 import StatefulPromise from './class/StatefulPromise.js'
 import fs from './fs'
